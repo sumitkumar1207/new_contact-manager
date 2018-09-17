@@ -10,13 +10,8 @@ import AddContact from "./components/contacts/AddContact";
 import About from "./components/contacts/About";
 
 // redux imports
-<<<<<<< HEAD
 import store from "./store";
 import { Provider } from "react-redux";
-=======
-import store from './store'
-import { Provider } from 'react-redux'
->>>>>>> 40953f78b0b3da832cd1ab92970738947be5a65e
 
 class App extends Component {
   render() {
