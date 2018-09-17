@@ -9,10 +9,14 @@ import Footer from "./components/layout/Footer";
 import AddContact from "./components/contacts/AddContact";
 import About from "./components/contacts/About";
 
+// redux imports
+import store from './store'
+import { Provider } from 'react-redux'
+
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
+      <Provider store={store}>
         <Router>
           <div className="App">
             <Header branding="Contact-Manager" />
@@ -26,7 +30,7 @@ class App extends Component {
             <Footer />
           </div>
         </Router>
-      </React.Fragment>
+      </Provider>
     );
   }
 }
